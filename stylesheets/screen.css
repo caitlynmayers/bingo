@@ -102,8 +102,8 @@ p {
 
 /* line 3, ../sass/modules/_content.scss */
 .content {
-  background-color: #f7f7f7;
   height: inherit;
+  margin: auto;
   overflow: auto;
   width: 100%;
 }
@@ -115,7 +115,17 @@ p {
 }
 /* line 16, ../sass/modules/_content.scss */
 .content table {
+  border: 1px solid black;
+  margin: 1rem 0;
+  padding: 1rem;
   width: 100%;
+}
+/* line 23, ../sass/modules/_content.scss */
+.content table th, .content table td {
+  border: 1px solid black;
+  max-width: 1rem;
+  padding: 1rem;
+  text-align: center;
 }
 
 /* line 1, ../sass/modules/_footer.scss */
