@@ -1,0 +1,32 @@
+.header {
+	
+	background-color: $header-background;
+	height: 60px;
+	width: 100%;
+	
+}
+
+.nav {
+	
+	ul {
+		
+		float: right;
+		list-style-type: none;
+		
+		li {
+			
+			float: left;
+			padding-left: 1.5em;
+			padding-right: 1.5em;
+			
+			a {
+				
+				display: block;
+				
+			}
+			
+		}
+		
+	}
+	
+}

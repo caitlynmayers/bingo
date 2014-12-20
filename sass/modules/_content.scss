@@ -1,0 +1,22 @@
+$content-width: 85%;
+
+.content {
+	
+	background-color: $background-color;
+	height: inherit;
+	overflow: auto;
+	width: 100%;
+	
+	@include mediaQuery(600px){
+		
+		width: 75%;
+		
+	}
+
+	table {
+		
+		width: 100%;
+		
+	}
+	
+}

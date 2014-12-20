@@ -1,0 +1,20 @@
+// Media Queries
+$no-mq-support: false !default;
+$no-mq-threshold: 1200px;
+@mixin mediaQuery($width: 0, $height: false) {
+    @if $no-mq-support{
+        @if $width < $no-mq-threshold{
+            @content;
+        }
+    } @else {
+        @if $height {
+            @media ( min-width: + $width ) and ( min-height: + $height ) {
+                @content;
+            }
+        }@else{
+            @media ( min-width: + $width ) {
+                @content;
+            }
+        }
+    }
+}
