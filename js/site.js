@@ -10,7 +10,7 @@ function randomNumber(maxNum){
 }
 
 function randomize(){
-	var contents = ['Army', 'Combat Engineer', 'BAM!', 'Pull a Hank Snow', 'Were you in the war?', 'Chop his head off', 'Have gun will travel', 'Where\'s my bride?', 'Green green grass of home', 'I had two words for him', 'Did you graduate?', 'Sons of bitches', 'They taught us to kill', 'Kilroy was here', 'She changed my vocabulary', 'I never did drink', 'Ladies', 'When I came back', 'Go to hell', 'New Guinea, Biac, Leite, Louzon and Japan', 'Break his neck', 'Carry a gun', 'Car', 'Shoot', 'I could kill you' ];
+	var contents = ['Army', 'Combat Engineer', 'BAM!', 'Pull a Hank Snow', 'Were you in the war?', 'Chop his head off', 'Have gun will travel', 'Where\'s my bride?', 'Green green grass of home', 'I had two words for him', 'Did you graduate?', 'Sons of bitches', 'They taught us to kill', 'Kilroy was here', 'She changed my vocabulary', 'I never did drink', 'Ladies', 'When I came back', 'Go to hell', 'New Guinea, Biak, Leite, Louzon and Japan', 'Break his neck', 'Carry a gun', 'Car', 'Shoot', 'I could kill you' ];
 	var randomContents = [];
 
 	while(randomContents.length != contents.length){
@@ -40,6 +40,11 @@ function displayContents(randomContents){
 				cell.innerHTML = text;
 			}
 			contentsIndex++;
+			
+			cell.addEventListener("click", function(){
+				this.classList.toggle('selected');
+			}, true);
+			
 		}
 	}
 

@@ -5,27 +5,57 @@ $content-width: 85%;
 	height: inherit;
 	margin: auto;
 	overflow: auto;
+	padding: 2rem 0;
 	width: 100%;
 	
 	@include mediaQuery(600px){
 		
-		width: 75%;
+		width: 65%;
 		
 	}
 
 	table {
 		
-		border: 1px solid black;
+		background-color: #f5f5f5;
 		margin: 1rem 0;
 		padding: 1rem;
 		width: 100%;
 		
 		th, td {
 			
-			border: 1px solid black;
-			max-width: 1rem;
-			padding: 1rem;
+			padding: 2rem 1rem;
 			text-align: center;
+			
+			@include mediaQuery(600px){
+		
+				max-width: 1rem;
+				
+			}
+			
+		}
+		
+		th {
+			
+			background-color: $blue;
+			border-left: 1px solid $light-gray;
+			border-right: 1px solid $light-gray;
+			color: white;
+			font-size: 1.25rem;
+			font-weight: 700;
+			
+		}
+		
+		td {
+			
+			border: 1px solid $light-gray;
+			color: #555658;
+			line-height: 1.15rem;
+			
+		}
+		
+		.selected {
+			
+			background-color: #B2E6FF;
 			
 		}
 		
